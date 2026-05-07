@@ -6,10 +6,8 @@ BOT_TOKEN = "8677231360:AAH6hdCpqqVquWkHJLSRMBK_g_tLDLxH_j0"
 # Путь к общей базе данных с веб-сайтом.
 # По умолчанию ищет data/urist.db рядом с папкой tg-bot (../U.R.I.S.T WEB/data/urist.db).
 # Можно переопределить переменной окружения URIST_DB_PATH.
-_default_db = os.path.normpath(
-    os.path.join(os.path.dirname(os.path.abspath(__file__)),
-                 '..', '..', 'OneDrive', 'Рабочий стол', 'U.R.I.S.T WEB', 'data', 'urist.db')
-)
+_default_db = 'urist.db'
+
 DB_NAME = os.environ.get('URIST_DB_PATH', _default_db)
 
 # Рабочие часы юриста
